@@ -1,0 +1,6 @@
+arm64/
+x86_64/
+nrnivmodl.log
+__pycache__/
+.venv/
+.DS_Store
