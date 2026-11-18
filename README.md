@@ -2,7 +2,7 @@
 
 Phase 1 of a thalamocortical model: the single cells and the physiology gate they must pass before they are wired into a circuit.
 
-## Content
+## Background
 
 Eight cell types, built in NEURON and described as NetPyNE `cellParams`:
 
@@ -30,7 +30,7 @@ The gate (`phase1_gate.py`) puts each cell under current clamp and runs 51 check
 
 A cell that fails a check gets its conductances retuned, and the gate is run again.
 
-### Structure
+### Structure of Repository (Phase-1)
 
 ```
 tc-phase1-cells/
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 The first run compiles `mod/` and the whole gate takes about 30 s. The run ends with `51/51 checks passed` and exits non-zero if any check fails. Everything is deterministic, so a rerun gives the same numbers.
 
-## Context
+## RQ + Aim
 
 The thalamus helps set how the cortex balances segregated processing (local, specialised) against integrated processing (brain-wide) [5, 7]. Thalamic relay cells fall along a gradient between two types:
 
@@ -81,7 +81,7 @@ The thesis asks whether raising the matrix share of thalamic drive (ρ) shifts t
 
 Phase 1 makes sure each cell type behaves like its biological counterpart before any synapses are added. The PT cell matters most: BAC firing is the mechanism through which matrix input is expected to act, so it has to be present at the single-cell level. In this phase core and matrix TC cells share one cell model. They differ only in where they project, which is set in Phase 2.
 
-## Conclusion
+## Results of Phase-1 
 
 All 51 checks pass.
 
