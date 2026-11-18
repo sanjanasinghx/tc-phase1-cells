@@ -75,9 +75,9 @@ Matrix input that arrives with somatic spiking can trigger dendritic Ca bursts i
 
 The thesis asks whether raising the matrix share of thalamic drive (ρ) shifts the cortex from segregation toward integration, and whether cortical activity collapses onto fewer dimensions as it does. The model is built in three gated phases:
 
-1. **single cells** (this repo)
-2. **canonical thalamocortical microcircuit**
-3. **16-area network sweep over ρ**
+1. **single cells** (this repo- phase 1)
+2. **canonical thalamocortical microcircuit** (phase 2)
+3. **16-area network sweep over ρ** (phase 3)
 
 Phase 1 makes sure each cell type behaves like its biological counterpart before any synapses are added. The PT cell matters most: BAC firing is the mechanism through which matrix input is expected to act, so it has to be present at the single-cell level. In this phase core and matrix TC cells share one cell model. They differ only in where they project, which is set in Phase 2.
 
